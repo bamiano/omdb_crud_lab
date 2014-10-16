@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+<div>
+  <p> Title - <%= movieDetail.Title %> </p>
+  <p> Year - <%= movieDetail.Year %> </p>
+  <p> Rated - <%= movieDetail.Rated %> </p>
+  <p> Released - <%= movieDetail.Released %> </p>
+  <p> Runtime - <%= movieDetail.Runtime %> </p>
+  <p> Director - <%= movieDetail.Director %> </p>
+  <p> Actors -  <%= movieDetail.Actors %> </p>
+  <p> Awards - <%= movieDetail.Awards %> </p>
+  <p> Plot - <%= movieDetail.Plot %> </p>
+</div>
+
+<p>
+  <form action="/favorites" method="POST">
+  <input type="hidden" name="title" value="<%= movieDetail.Title %>">
+  <input type="submit" value="Save to My Favorites">
+</p>
+
+</body>
+</html>
